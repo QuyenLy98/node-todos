@@ -39,13 +39,20 @@
 
       <div id="todo-list" class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <div class="checkbox" ng-repeat="todo in todos">
+          <div
+            class="checkbox"
+            ng-repeat="todo in todos"
+            style="font-size: 22px; margin-bottom: 20px"
+          >
             <input
               type="checkbox"
               ng-model="todo.isDone"
               ng-change="updateTodo(todo)"
-            />
-            <a href><i class="fa fa-remove" ng-click="deleteTodo(todo)"></i></a>
+              style="width: 30px; height: 30px"
+            />&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href ng-hide="textBtnForm.$visible"
+              ><i class="fa fa-remove" ng-click="deleteTodo(todo)"></i></a
+            >&nbsp;&nbsp;&nbsp;
             <a
               href
               ng-click="textBtnForm.$show()"
