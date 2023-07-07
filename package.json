@@ -4,7 +4,7 @@
   "description": "single page todo application with Nodejs and Angular",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "npm istall && nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
